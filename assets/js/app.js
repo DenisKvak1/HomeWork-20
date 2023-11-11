@@ -27,11 +27,11 @@ let result = document.getElementById("result");
 
 Button.addEventListener("click", function() {
     if(Input.value){
-        if(isSimply(Input.value)){
-            result.textContent='Число простое';
-        }
-        else if(isNaN(isSimply(Input.value))){
+        if(isNaN(isSimply(Input.value))){
             result.textContent='Введите число';
+        }
+        else if(isSimply(Input.value)){
+            result.textContent='Число простое';
         }
         else{
             result.textContent='Число не простое';

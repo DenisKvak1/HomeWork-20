@@ -27,10 +27,7 @@ let result = document.getElementById("result");
 
 Button.addEventListener("click", function() {
     if(Input.value){
-        if(isNaN(isSimply(Input.value))){
-            result.textContent='Введите число';
-        }
-        else if(isSimply(Input.value)){
+        if(isSimply(Input.value)){
             result.textContent='Число простое';
         }
         else{

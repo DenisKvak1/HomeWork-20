@@ -30,8 +30,11 @@ Button.addEventListener("click", function() {
         if(isSimply(Input.value)){
             result.textContent='Число простое';
         }
-        else{
+        else if(Input.value!=1){
             result.textContent='Число не простое';
+        }
+        else{
+            result.innerHTML='Число не простое <br> и ни составное';
         }
         Input.value='';
     }
